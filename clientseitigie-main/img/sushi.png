@@ -1,0 +1,922 @@
+<!DOCTYPE html><html lang="de-DE"><head> <script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" /><meta name="apple-mobile-web-app-capable" content="yes" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-57x57.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-114x114.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-72x72.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-144x144.png" /><link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-60x60.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-120x120.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-76x76.png" /><link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/apple-touch-icon-152x152.png" /><link rel="icon" type="image/png" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/favicon-196x196.png" sizes="196x196" /><link rel="icon" type="image/png" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/png" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/favicon-16x16.png" sizes="16x16" /><link rel="icon" type="image/png" href="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/favicon-128.png" sizes="128x128" /><meta name="application-name" content="EATHAPPY"/><meta name="msapplication-TileColor" content="#FF646E" /><meta name="msapplication-TileImage" content="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/mstile-144x144.png" /><meta name="msapplication-square70x70logo" content="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/mstile-70x70.png" /><meta name="msapplication-square150x150logo" content="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/mstile-150x150.png" /><meta name="msapplication-wide310x150logo" content="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/mstile-310x150.png" /><meta name="msapplication-square310x310logo" content="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/favicon/mstile-310x310.png" /> <!-- Preconnect to required origins--><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><style>body { opacity: 0; transition: opacity 0.15s linear; }</style><meta name='robots' content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' /> <!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ --><title>Sushi - Eat Happy - freshly made smiles</title><link rel="canonical" href="https://www.eathappy.de/produkt-kategorie/sushi/" /><link rel="next" href="https://www.eathappy.de/produkt-kategorie/sushi/page/2/" /><meta property="og:locale" content="de_DE" /><meta property="og:type" content="article" /><meta property="og:title" content="Sushi - Eat Happy - freshly made smiles" /><meta property="og:url" content="https://www.eathappy.de/produkt-kategorie/sushi/" /><meta property="og:site_name" content="Eat Happy - freshly made smiles" /><meta property="og:image" content="https://www.eathappy.de/wp-content/uploads/2022/07/og-1-2.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:type" content="image/png" /><meta name="twitter:card" content="summary_large_image" /> <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://www.eathappy.de/produkt-kategorie/sushi/","url":"https://www.eathappy.de/produkt-kategorie/sushi/","name":"Sushi - Eat Happy - freshly made smiles","isPartOf":{"@id":"https://www.eathappy.de/#website"},"primaryImageOfPage":{"@id":"https://www.eathappy.de/produkt-kategorie/sushi/#primaryimage"},"image":{"@id":"https://www.eathappy.de/produkt-kategorie/sushi/#primaryimage"},"thumbnailUrl":"https://www.eathappy.de/wp-content/uploads/2022/08/big_happy_box_c_eat_happy.png","breadcrumb":{"@id":"https://www.eathappy.de/produkt-kategorie/sushi/#breadcrumb"},"inLanguage":"de-DE"},{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.eathappy.de/produkt-kategorie/sushi/#primaryimage","url":"https://www.eathappy.de/wp-content/uploads/2022/08/big_happy_box_c_eat_happy.png","contentUrl":"https://www.eathappy.de/wp-content/uploads/2022/08/big_happy_box_c_eat_happy.png","width":640,"height":473},{"@type":"BreadcrumbList","@id":"https://www.eathappy.de/produkt-kategorie/sushi/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.eathappy.de/"},{"@type":"ListItem","position":2,"name":"Sushi"}]},{"@type":"WebSite","@id":"https://www.eathappy.de/#website","url":"https://www.eathappy.de/","name":"Eat Happy - freshly made smiles","description":"freshly made smiles","publisher":{"@id":"https://www.eathappy.de/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.eathappy.de/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"de-DE"},{"@type":"Organization","@id":"https://www.eathappy.de/#organization","name":"EATHAPPY GROUP","url":"https://www.eathappy.de/","sameAs":["https://www.instagram.com/eathappy/","https://www.facebook.com/EatHappySushi"],"logo":{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.eathappy.de/#/schema/logo/image/","url":"https://www.eathappy.de/wp-content/uploads/2022/07/eathappy-logo-with-stamp-coral.svg","contentUrl":"https://www.eathappy.de/wp-content/uploads/2022/07/eathappy-logo-with-stamp-coral.svg","width":350,"height":90,"caption":"EATHAPPY GROUP"},"image":{"@id":"https://www.eathappy.de/#/schema/logo/image/"}}]}</script> <!-- / Yoast SEO plugin. --><link rel="alternate" type="application/rss+xml" title="Eat Happy - freshly made smiles &raquo; Sushi Kategorie Feed" href="https://www.eathappy.de/produkt-kategorie/sushi/feed/" /> <!-- This site uses the Google Analytics by MonsterInsights plugin v8.10.0 - Using Analytics tracking - https://www.monsterinsights.com/ --> <script
+				src="//www.googletagmanager.com/gtag/js?id=UA-78256699-1"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script> <script data-cfasync="false" data-wpfc-render="false" type="text/javascript">var mi_version = '8.10.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-78256699-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = monsterinsights_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+															__gtagTracker('config', 'UA-78256699-1', {"forceSSL":"true","anonymize_ip":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}</script> <!-- / Google Analytics by MonsterInsights --><style id='woocommerce-inline-inline-css' type='text/css'>.woocommerce form .form-row .required { visibility: visible; }</style><link rel='stylesheet' id='borlabs-cookie-css' href='https://www.eathappy.de/wp-content/cache/autoptimize/css/autoptimize_single_260efc6bfa93d19362d795a64e304513.css?ver=2.2.56-27' type='text/css' media='all' /> <script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.eathappy.de","hash_tracking":"false","ua":"UA-78256699-1","v4_id":""};/* ]]> */</script> <script type='text/javascript' src='https://www.eathappy.de/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script> <script defer type='text/javascript' src='https://www.eathappy.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script> <script defer type='text/javascript' src='https://www.eathappy.de/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2' id='jquery-effects-core-js'></script> <script type='text/javascript' id='site-script-js-extra'>/* <![CDATA[ */
+var php = {"ajax_url":"https:\/\/www.eathappy.de\/wp-admin\/admin-ajax.php","site_url":"https:\/\/www.eathappy.de","theme_url":"https:\/\/www.eathappy.de\/wp-content\/themes\/eathappy","shop_page_permalink":"https:\/\/www.eathappy.de\/produkte\/"};
+/* ]]> */</script> <script type='text/javascript' id='borlabs-cookie-prioritize-js-extra'>/* <![CDATA[ */
+var borlabsCookiePrioritized = {"domain":"www.eathappy.de","path":"\/","version":"1","bots":"","optInJS":{"statistics":{"google-analytics":"PHNjcmlwdD4NCndpbmRvdy5ib3JsYWJzQ29va2llT3B0SW5Hb29nbGVBbmFseXRpY3MgPSB0cnVlOw0Kd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107DQogIHdpbmRvdy5kYXRhTGF5ZXIucHVzaCh7DQogICAgZXZlbnQ6ICdib3JsYWJzQ29va2llT3B0SW5Hb29nbGVBbmFseXRpY3MnLA0KICB9KTsNCjwvc2NyaXB0Pg=="},"marketing":{"facebook-pixel":"PHNjcmlwdD4NCndpbmRvdy5ib3JsYWJzQ29va2llT3B0SW5GYWNlYm9vayA9IHRydWU7DQp3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTsNCiAgd2luZG93LmRhdGFMYXllci5wdXNoKHsNCiAgICBldmVudDogJ2JvcmxhYnNDb29raWVPcHRJbkZhY2Vib29rJywNCiAgfSk7DQo8L3NjcmlwdD4="}}};
+/* ]]> */</script> <script defer type='text/javascript' src='https://www.eathappy.de/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie-prioritize.min.js?ver=2.2.56' id='borlabs-cookie-prioritize-js'></script> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript><link rel="icon" href="https://www.eathappy.de/wp-content/uploads/2022/09/cropped-favicon-32x32.png" sizes="32x32" /><link rel="icon" href="https://www.eathappy.de/wp-content/uploads/2022/09/cropped-favicon-192x192.png" sizes="192x192" /><link rel="apple-touch-icon" href="https://www.eathappy.de/wp-content/uploads/2022/09/cropped-favicon-180x180.png" /><meta name="msapplication-TileImage" content="https://www.eathappy.de/wp-content/uploads/2022/09/cropped-favicon-270x270.png" /></head><body class="archive tax-product_cat term-sushi term-16 theme-eathappy woocommerce woocommerce-page woocommerce-no-js" data-post-id="72216" v-lazy @vue:mounted="mounted"> <!-- Body Wrapper --><div id="body-wrapper"> <!-- Header --><header id="header" class="bg-coral grid-outer"><div class="header-inner grid"> <!-- Mobile Menu Button --> <a href="#" id="mobile-menu-button" aria-label="Menu Button"> <span class="lines"> <span class="line"></span> <span class="line"></span> <span class="line"></span> <span class="line"></span> </span> </a> <!-- Logo --> <a href="https://www.eathappy.de/" id="logo" title="EAT HAPPY"> <img width="184" height="24" src="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/logo.svg" alt="EAT HAPPY Logo"> <i class="icon-stamp"></i> </a> <!-- Nav --><nav class="nav"> <!-- Mobile Menu Close Button --> <a href="#" class="mobile-menu-close-button" aria-label="Close"><i class="icon-close"></i></a> <!-- Menu --><ul class="menu"><li id="menu-item-1129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1129"><a href="https://www.eathappy.de/">Startseite</a></li><li id="menu-item-1130" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1130"><a href="https://www.eathappy.de/produkte/">Produkte</a><ul class="sub-menu"><li id="menu-item-68601" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-68601"><a href="https://www.eathappy.de/produkt-kategorie/sushi-platten/">Sushi-Platten</a></li><li id="menu-item-1131" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-menu-item menu-item-1131"><a href="https://www.eathappy.de/produkt-kategorie/sushi/" aria-current="page">Sushi</a></li><li id="menu-item-1132" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1132"><a href="https://www.eathappy.de/produkt-kategorie/bowls/">Bowls</a></li><li id="menu-item-1133" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1133"><a href="https://www.eathappy.de/produkt-kategorie/snacks/">Snacks</a></li><li id="menu-item-70812" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-70812"><a href="https://www.eathappy.de/produkt-kategorie/mochi/">Mochi</a></li></ul></li><li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1135"><a href="https://www.eathappy.de/standorte/">Standorte</a></li><li id="menu-item-1136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136"><a href="https://www.eathappy.de/ueber-uns/">Über uns</a></li><li id="menu-item-1140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1140"><a href="https://www.eathappy.de/jobs/">Jobs</a></li><li id="menu-item-1137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1137"><a href="https://www.eathappy.de/magazin/">Magazin</a></li><li id="menu-item-67756" class="my-account menu-item menu-item-type-post_type menu-item-object-page menu-item-67756"><a href="https://www.eathappy.de/mein-konto/">Mein Konto</a></li></ul></nav> <!-- Nav Overlay --><div id="nav-overlay"></div> <!-- Header Buttons --><div class="header-buttons"> <!-- My Account Button --> <a href="https://www.eathappy.de/mein-konto/" class="my-account-button" title=" Mein Konto"><i class="icon-user"></i><i class="icon-user-solid"></i></a> <!-- Shopping Bag Button --> <a href="#" class="shopping-bag-button " title="Warenkorb"><i class="icon-shopping-bag"></i><i class="icon-shopping-bag-solid"></i></a></div></div></header> <!-- Page Wrapper --><div id="page-wrapper"><div id="primary" class="content-area"><main id="main" class="site-main" role="main"><section class="module-breadcrumbs-container grid-outer  "><article class="module-breadcrumbs grid"> <a href="https://www.eathappy.de">Startseite</a> <span>/</span><p>Produkte</p></article></section> <!-- Products Module --><section class="module-products-container grid-outer"><article class="module-products grid shop"> <!-- Shop Sidebar --><div class="shop-sidebar"> <a href="#" class="js-close-shop-sidebar"><i class="icon-close"></i></a><div class="shop-sidebar-inner"><div class="shop-sidebar-widget"><p class="shop-sidebar-widget-title">KATEGORIEN</p><ul><li ><a href="https://www.eathappy.de/produkte/">Alle Produkte</a></li><li > <a href="https://www.eathappy.de/produkt-kategorie/sushi-platten/">Sushi-Platten<!-- TODO BUNDLES <span class="new-tag">New</span>--></a></li><li class="active"> <a href="https://www.eathappy.de/produkt-kategorie/sushi/">Sushi<i class="icon-down"></i><!-- TODO BUNDLES <span class="new-tag">New</span>--></a><ul><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/nigiri/">Nigiri</a></li><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/maki-rolls/">Maki</a></li><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/california-rolls/">California</a></li><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/futo-rolls/">Futo</a></li><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/sashimi/">Sashimi</a></li><li ><a href="https://www.eathappy.de/produkt-kategorie/sushi/mixed-boxen/">Mixed Boxen</a></li></ul></li><li > <a href="https://www.eathappy.de/produkt-kategorie/bowls/">Bowls<!-- TODO BUNDLES <span class="new-tag">New</span>--></a></li><li > <a href="https://www.eathappy.de/produkt-kategorie/snacks/">Snacks<!-- TODO BUNDLES <span class="new-tag">New</span>--></a></li><li > <a href="https://www.eathappy.de/produkt-kategorie/mochi/">Mochi<!-- TODO BUNDLES <span class="new-tag">New</span>--></a></li></ul></div><div class="shop-sidebar-widget"><p class="shop-sidebar-widget-title">Kategorien</p><ul class="shop-term-filters" data-category="16"><li> <a data-term-id="23" href="https://www.eathappy.de/produkt-tag/vegetarisch/"><i class="icon-23"></i>Vegetarisch</a></li><li> <a data-term-id="22" href="https://www.eathappy.de/produkt-tag/vegan/"><i class="icon-22"></i>Vegan</a></li><li> <a data-term-id="20" href="https://www.eathappy.de/produkt-tag/laktosefrei/"><i class="icon-20"></i>Laktosefrei</a></li><li> <a data-term-id="19" href="https://www.eathappy.de/produkt-tag/glutenfrei/"><i class="icon-19"></i>Glutenfrei</a></li></ul></div><div class="shop-sidebar-widget"><p class="shop-sidebar-widget-title">EINE SONDERBESTELLUNG AUFGEBEN</p> <a href="https://www.eathappy.de/sonderbestellung/" class="button medium coral outline">ZUM FORMULAR</a></div></div></div> <!-- Products Wrap --><div class="shop-wrap"> <!-- Shop Banner --><div class="shop-banner"><div class="left"><h4 class="hide-on-mobile">Sushi</h4> <!-- Text --><div class="shop-banner-text bg-rose color-green"><h4 class="show-on-mobile">Sushi</h4><p>Unsere EAT HAPPY Produkte werden täglich frisch & liebevoll für dich zubereitet. Von handgemachten Sushi-Klassikern bis hin zu Bowls, Snacks und traditionellen Desserts.</p></div></div><div class="right"> <img class="rotate-right" src="https://www.eathappy.de/wp-content/uploads/2022/08/category_sushi_c_eat_happy.png" alt=""></div></div> <!-- Products --><div class="shop-products-container"> <!-- Sort By --><div class="sort-by"> <a href="#" class="js-open-shop-sidebar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path> </svg> Filter</a><p class="hide-on-mobile">Sortieren nach:</p><div class="sort-by-wrap"> <a href="#" class="sort-by-button"><span class="hide-on-mobile"><span class="sort-label">AUSWÄHLEN</span> <i class="icon-down"></i></span><span class="show-on-mobile">Sortieren</span></a><ul class="sort-by-list"><li class="active"><a href="#" class="js-sort-products" data-sort-order="menu_order">AUSWÄHLEN</a></li><li ><a href="#" class="js-sort-products" data-sort-order="popularity">Beliebtheit</a></li><li ><a href="#" class="js-sort-products" data-sort-order="date">Neue Produkte</a></li><li ><a href="#" class="js-sort-products" data-sort-order="price">Niedrigster Preis</a></li><li ><a href="#" class="js-sort-products" data-sort-order="price-desc">Höchster Preis</a></li></ul></div></div><div class="products"> <!-- Product --><div class="product type-product post-72184 status-publish first instock product_cat-mixed-boxen product_cat-sushi product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/califuto-lachs/"> <span class="image"> <span class="image-ratio"><img width="304" height="213" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/califuto_lachs_c_eat_happy-1-608x426.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/califuto_lachs_c_eat_happy-1-304x213.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/califuto_lachs_c_eat_happy-1-304x213.png" alt="califuto_lachs_c_eat_happy"></span> </span> </a> <span class="title">CaliFuto Lachs</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>8,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/califuto-lachs/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72131 status-publish instock product_cat-california-rolls product_cat-sushi product_tag-glutenfrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/california-lachs-mango/"> <span class="image"> <span class="image-ratio"><img width="304" height="228" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/California-Lachs-Mango-608x456.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/California-Lachs-Mango-304x228.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/California-Lachs-Mango-304x228.png" alt="California Lachs Mango"></span> </span> </a> <span class="title">California Lachs Mango</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>8,49<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/california-lachs-mango/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72133 status-publish instock product_cat-futo-rolls product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/futo-lachs-avocado/"> <span class="image"> <span class="image-ratio"><img width="304" height="217" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/futo_lachs_avocado_c_eat_happy-1-608x434.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/futo_lachs_avocado_c_eat_happy-1-304x217.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/futo_lachs_avocado_c_eat_happy-1-304x217.png" alt="futo_lachs_avocado_c_eat_happy"></span> </span> </a> <span class="title">Futo Lachs Avocado</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>7,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/futo-lachs-avocado/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72135 status-publish last instock product_cat-maki-rolls product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei product_tag-vegan product_tag-vegetarisch has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/maki-gurke/"> <span class="image"> <span class="image-ratio"><img width="304" height="213" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/maki_gurke_c_eat_happy-2-608x426.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/maki_gurke_c_eat_happy-2-304x213.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/maki_gurke_c_eat_happy-2-304x213.png" alt="maki_gurke_c_eat_happy"></span> </span> </a> <span class="title">Maki Gurke</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/maki-gurke/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72137 status-publish first instock product_cat-maki-rolls product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei product_tag-vegan product_tag-vegetarisch has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/maki-avocado/"> <span class="image"> <span class="image-ratio"><img width="304" height="188" loading="lazy" src="https://www.eathappy.de/wp-content/uploads/2022/08/maki_avocado_c_eat_happy-1-304x188.png" alt="maki_avocado_c_eat_happy"></span> </span> </a> <span class="title">Maki Avocado</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/maki-avocado/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72139 status-publish instock product_cat-maki-rolls product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/maki-lachs/"> <span class="image"> <span class="image-ratio"><img width="304" height="188" loading="lazy" src="https://www.eathappy.de/wp-content/uploads/2022/08/maki_lachs_c_eat_happy-1-304x188.png" alt="maki_lachs_c_eat_happy"></span> </span> </a> <span class="title">Maki Lachs</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>4,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/maki-lachs/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72141 status-publish instock product_cat-maki-rolls product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/maki-thunfisch/"> <span class="image"> <span class="image-ratio"><img width="304" height="188" loading="lazy" src="https://www.eathappy.de/wp-content/uploads/2022/08/maki_thunfisch_c_eat_happy-304x188.png" alt="maki_thunfisch_c_eat_happy"></span> </span> </a> <span class="title">Maki Thunfisch</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>5,49<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/maki-thunfisch/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72143 status-publish last instock product_cat-nigiri product_cat-sushi product_tag-glutenfrei product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/nigiri-lachs/"> <span class="image"> <span class="image-ratio"><img width="304" height="179" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/nigiri_lachs_c_eat_happy-608x358.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/nigiri_lachs_c_eat_happy-304x179.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/nigiri_lachs_c_eat_happy-304x179.png" alt="nigiri_lachs_c_eat_happy"></span> </span> </a> <span class="title">Nigiri Lachs</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>8,49<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/nigiri-lachs/" class="button ">AUSWÄHLEN</a></div></div> <!-- Product --><div class="product type-product post-72182 status-publish first instock product_cat-mixed-boxen product_cat-sushi product_tag-laktosefrei has-post-thumbnail purchasable product-type-simple"><div class="inner"> <a href="https://www.eathappy.de/produkte/feel-good-box-lachs/"> <span class="image"> <span class="image-ratio"><img width="304" height="209" loading="lazy" srcset="https://www.eathappy.de/wp-content/uploads/2022/08/soulfood_box_lachs-608x418.png 2x, https://www.eathappy.de/wp-content/uploads/2022/08/soulfood_box_lachs-304x209.png 1x" src="https://www.eathappy.de/wp-content/uploads/2022/08/soulfood_box_lachs-304x209.png" alt="soulfood_box_lachs"></span> </span> </a> <span class="title">Feel Good Box Lachs</span> <span class="price"> <span class="woocommerce-Price-amount amount"><bdi>14,99<span class="woocommerce-Price-currencySymbol"> &euro;</span></bdi></span> </span> <a href="https://www.eathappy.de/produkte/feel-good-box-lachs/" class="button ">AUSWÄHLEN</a></div></div></div><div class="page-nav-module"><div class="page-nav"><div class="wp-pagenavi" role="navigation"> <span aria-current="page" class="page-numbers current">1</span> <a class="page-numbers js-change-page" href="#" data-page="2">2</a> <a class="page-numbers js-change-page" href="#" data-page="3">3</a> <a class="page-numbers js-change-page" href="#" data-page="4">4</a></div></div></div></div></div></article></section> <!-- Module: newsletter --><section id="newsletter" class="module-form-container grid-outer bg-rose"><article class="module-form has-image grid"> <!-- Left --><div class="left"> <!-- Intro --><div class="intro"><h3>Frisch informiert <img src="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/briefcase.svg" alt="Briefcase"></h3><p>Neuigkeiten und Angebote von EAT HAPPY im Newsletter!</p></div> <!-- Form Wrap --><div class="form-wrap"> <!-- Form --><div class="form"> <script type="text/javascript">var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});</script> <div class='gf_browser_safari gform_wrapper gform_legacy_markup_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/produkt-kategorie/sushi/' ><div class='gform_body gform-body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id="field_1_1"  class="gfield half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_1"><label class='gfield_label' for='input_1_1' >Dein Vorname<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='medium'  aria-describedby="gfield_description_1_1"   aria-required="true" aria-invalid="false"   /></div><div class='gfield_description' id='gfield_description_1_1'></div></li><li id="field_1_2"  class="gfield half field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_2"><label class='gfield_label' for='input_1_2' >Dein Nachname (optional)</label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_1_2' type='text' value='' class='medium'      aria-invalid="false"   /></div></li><li id="field_1_3"  class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_3"><label class='gfield_label' for='input_1_3' >Deine E-Mail-Adresse<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'> <input name='input_3' id='input_1_3' type='text' value='' class='medium'    aria-required="true" aria-invalid="false"  /></div></li><li id="field_1_4"  class="gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible"  data-js-reload="field_1_4"><label class='gfield_label screen-reader-text gfield_label_before_complex'  ><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_consent'><input name='input_4.1' id='input_1_4_1' type='checkbox' value='1'   aria-required="true" aria-invalid="false"   /> <label class="gfield_consent_label" for='input_1_4_1' >Mit Klick auf den Button bestätige ich, dass ich die <a href="/datenschutzerklaerung/" target="_blank"> Datenschutzerklärung</a> zur Kenntnis genommen habe.</label><span class="gfield_required gfield_required_asterisk">*</span><input type='hidden' name='input_4.2' value='Mit Klick auf den Button bestätige ich, dass ich die &lt;a href=&quot;/datenschutzerklaerung/&quot; target=&quot;_blank&quot;&gt; Datenschutzerklärung&lt;/a&gt; zur Kenntnis genommen habe.' class='gform_hidden' /><input type='hidden' name='input_4.3' value='1' class='gform_hidden' /></div></li></ul></div><div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Anmelden'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0' /> <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' /> <input type='hidden' class='gform_hidden' name='gform_submit' value='1' /> <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' /> <input type='hidden' class='gform_hidden' name='state_1' value='WyJ7XCI0LjFcIjpcImY3MTU2YzY3N2JlMzMyMGUwM2UwNTBmNzAyMjNhZWQwXCIsXCI0LjJcIjpcImExNDBhYzNiNzU3MDVjYTdjMzBkM2FhMTM4YzU1ZDRiXCIsXCI0LjNcIjpcImY3MTU2YzY3N2JlMzMyMGUwM2UwNTBmNzAyMjNhZWQwXCJ9IiwiOGRjYjU2MjM2NzUyZDViNjU2NTgyZDYyNzBiNzk1YTUiXQ==' /> <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' /> <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' /> <input type='hidden' name='gform_field_values' value='' /></div></form></div> <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='Dieser iframe enthält die erforderliche Logik um Gravity Forms Formulare mit AJAX zu handhaben.'></iframe> <script type="text/javascript">gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://www.eathappy.de/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://www.eathappy.de/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );</script> </div></div></div> <!-- Right --><div class="right"> <img src="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/briefcase.svg" alt="Briefcase"> <!-- Rotating Stamp --><div class="rotating-stamp"> <img src="https://www.eathappy.de/wp-content/themes/eathappy/assets/img/eathappy-stamp-coral.svg" alt="EATHAPPY Stamp"></div></div></article></section></main></div></div> <!-- Footer --><footer id="footer" class="grid-outer"><div class="footer-inner grid"> <!-- Footer Menu --><nav class="footer-nav"><ul class="footer-menu"><li id="menu-item-1163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1163"><a href="https://www.eathappy.de/kontakt/">Kontakt</a></li><li id="menu-item-1162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1162"><a href="https://www.eathappy.de/impressum/">Impressum</a></li><li id="menu-item-70962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-70962"><a href="https://www.eathappy.de/datenschutzerklaerung/">Datenschutzerklärung</a></li><li id="menu-item-1161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="https://www.eathappy.de/faq/">FAQ</a></li><li id="menu-item-1160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1160"><a href="https://www.eathappy.de/covid-19/">Covid-19</a></li><li id="menu-item-70963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70963"><a href="https://www.eathappy.de/agb/">AGB</a></li></ul></nav> <!-- Social Icons --><div class="social-icons"> <a href="https://www.facebook.com/EatHappySushi" target="_blank" aria-label="Facebook"><i class="icon-facebook"></i></a> <a href="https://www.instagram.com/eathappy/" target="_blank" aria-label="Instagram"><i class="icon-instagram"></i></a> <a href="https://www.tiktok.com/@eathappy_official" target="_blank" aria-label="Tiktok"><i class="icon-tiktok"></i></a> <a href="https://www.youtube.com/c/EATHAPPY-TV" target="_blank" aria-label="Youtube"><i class="icon-youtube"></i></a> <a href="https://open.spotify.com/user/314uz5y2otpv2y6iguirqare5oli?si=1186ae6b83174662" target="_blank" aria-label="Spotify"><i class="icon-spotify"></i></a> <a href="https://www.linkedin.com/company/eat-happy-deutschland/" target="_blank" aria-label="LinkedIn"><i class="icon-linkedin"></i></a> <a href="https://www.pinterest.de/eathappy_de/" target="_blank" aria-label="Pinterest"><i class="icon-pinterest"></i></a></div></div></footer> <!-- Scroll To Top Button --> <button class="scroll-to-top"> <!-- TODO TRANSLATE --> <svg aria-label="Zum Anfang springen" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_0_3)"><path d="M36.9475 20.3539C37.0464 20.4533 37.0464 20.5531 37.2442 20.4533C37.343 20.3539 37.343 20.2541 37.2442 20.1547C37.2442 20.0554 37.1453 19.9555 37.0464 20.0554C36.8486 20.0554 36.8486 20.1547 36.9475 20.3539V20.3539Z" fill="#FF646E"/><path d="M0.755515 18.8597C1.15104 18.9595 1.44768 19.1587 1.74432 19.5571C1.35506 19.6567 0.947007 19.6567 0.557755 19.5571C0.458875 19.9555 0.458875 20.2541 0.359995 20.4528L0.854395 20.4528C1.05216 20.4528 1.24992 20.353 1.3488 20.652C1.3488 20.7514 1.44768 20.9506 1.24992 21.0504C1.15873 21.0994 1.05681 21.1251 0.953275 21.1251C0.849742 21.1251 0.747823 21.0994 0.656635 21.0504C0.458875 20.9506 0.359995 20.8512 0.261115 20.652C0.162235 21.0504 0.162235 21.349 0.162235 21.349C-0.233285 24.8342 -0.332165 32.8013 5.10623 39.1747C5.10623 39.3739 5.10623 39.6725 5.30447 39.7723C5.35048 39.8635 5.42127 39.9399 5.50872 39.9927C5.59617 40.0455 5.69673 40.0726 5.79888 40.0709L5.89775 40.0709C8.17199 42.4613 11.3362 44.5522 15.6874 45.9461C15.6874 45.7474 15.7862 45.5477 15.7862 45.349C15.7862 45.2491 15.7862 45.1498 15.6874 45.0499L15.3907 44.7514C15.2918 44.652 15.193 44.5522 15.3907 44.4528C15.4896 44.353 15.5885 44.2536 15.6874 44.4528C15.8851 44.7514 16.2806 44.8512 16.5773 44.9506C16.9728 45.0499 16.9728 45.349 16.6762 45.7474L16.5773 45.8467C16.3795 45.9466 16.2806 46.1458 16.1818 46.345C17.4672 46.7434 18.8515 47.1418 20.3347 47.4403C40.5077 51.4234 46.5398 32.9011 47.0342 30.7099C47.5286 28.3195 51.2861 13.8802 39.6178 5.51472C39.6178 5.41536 39.7166 5.316 39.6178 5.21616C39.6178 5.1168 39.5189 5.01697 39.42 5.11681C39.3211 5.11681 39.3211 5.21616 39.3211 5.21616C36.6509 3.324 33.0912 1.83024 28.5427 0.834722C8.07312 -3.84576 2.23872 12.3864 0.755515 18.8592L0.755515 18.8597ZM26.4658 46.8432C26.5646 47.0424 26.4658 47.1418 26.268 47.2416C26.1691 47.341 25.9714 47.341 25.9714 47.1418C25.9714 47.0424 25.9714 46.8432 26.0702 46.7434C26.268 46.644 26.3669 46.7434 26.4658 46.8432V46.8432ZM28.0483 45.4488C28.0483 45.4488 28.0483 45.5486 27.9494 45.648C27.8506 45.648 27.8506 45.648 27.7512 45.5486L27.7512 45.4488L28.0483 45.4488ZM30.1248 44.7518C30.2237 44.7518 30.2237 44.8517 30.3226 44.8517C30.1248 44.951 30.1248 44.8517 30.1248 44.7518C30.0259 44.7518 30.0259 44.7518 30.1248 44.7518C30.0259 44.951 29.927 45.1502 29.7293 44.951L29.6304 44.7518C29.7293 44.5526 29.927 44.6525 30.1248 44.7518C30.0259 44.7518 30.0259 44.7518 30.1248 44.7518ZM23.8949 42.3614L23.8949 42.2621C23.9938 42.1627 23.9938 42.2621 24.0926 42.2621C24.0926 42.2621 24.0926 42.3619 23.9938 42.3619L23.8949 42.3619L23.8949 42.3614ZM30.3221 43.1582C30.2237 43.1582 30.2237 43.2581 30.1248 43.2581L30.0259 43.1587C30.1248 43.1587 30.1248 43.0589 30.2237 43.0589L30.3226 43.1587L30.3221 43.1582ZM28.9382 42.6605L28.7405 42.8597C28.7405 42.8597 28.6416 42.8597 28.6416 42.7603C28.7405 42.7603 28.7405 42.6605 28.7405 42.6605L28.9382 42.6605V42.6605ZM25.8725 42.2621C25.9714 42.3619 26.0702 42.6605 25.7736 42.6605C25.5758 42.6605 25.3781 42.6605 25.2792 42.4613C25.1803 42.2621 25.2792 42.1627 25.477 42.0629C25.6747 41.8637 25.7736 42.0629 25.8725 42.2621V42.2621ZM23.6971 41.3659C23.6971 41.4658 23.796 41.5651 23.5982 41.5651C23.4994 41.5651 23.4005 41.5651 23.3016 41.4658C23.2027 41.3659 23.2027 41.2666 23.4005 41.1667C23.4994 41.1667 23.5982 41.2666 23.6971 41.3659V41.3659ZM33.289 39.7723C33.289 39.8722 33.1901 39.972 33.1901 39.972L32.9923 39.972C32.9923 39.8722 32.9923 39.8722 33.0912 39.7728C33.0912 39.673 33.1901 39.7728 33.289 39.7728L33.289 39.7723ZM7.6776 14.5776C7.6776 14.4782 7.77648 14.4782 7.77648 14.3784C7.77648 14.3784 7.87536 14.3784 7.87536 14.4782C7.87536 14.5776 7.77648 14.5776 7.77648 14.6774L7.6776 14.5776V14.5776ZM14.5992 14.0798C14.9952 14.279 15.193 14.3784 15.0936 14.5776C14.7974 14.6774 14.7974 14.4782 14.5992 14.0798ZM2.832 17.5651L2.832 17.4658L2.93088 17.4658L2.93088 17.5651C2.93088 17.665 2.832 17.5651 2.832 17.5651ZM4.8096 20.1542C4.41456 19.8557 3.91968 19.5571 3.3264 19.4573C2.93088 19.4573 3.02976 19.0589 3.22752 18.9595C4.01856 18.6605 3.8208 18.2621 3.62304 17.8642C3.42528 17.5651 3.42528 17.1667 3.3264 16.8682C2.63424 16.8682 2.04096 16.1712 2.13984 15.5736C2.13984 15.4738 2.23872 15.3744 2.23872 15.3744C2.3376 15.3744 2.53536 15.4738 2.53536 15.4738C2.93088 15.8722 3.12864 16.3704 3.3264 16.7688C4.7112 17.3659 5.00784 18.6605 5.10672 19.9555C5.2056 20.2541 5.10672 20.3539 4.81008 20.1542L4.8096 20.1542ZM5.40336 15.4742C5.50224 15.673 5.50224 15.7728 5.30448 15.8726C5.10672 15.972 4.90896 16.0714 4.81008 15.7728C4.81008 15.673 4.7112 15.3744 4.90896 15.275C5.10672 15.1752 5.30448 15.275 5.40336 15.4738L5.40336 15.4742ZM2.43696 21.7478C2.3376 21.5486 2.43696 21.3494 2.63424 21.3494C2.832 21.2501 3.02976 21.1502 3.02976 21.4488C3.02976 21.648 3.22752 21.8472 3.02976 21.947C2.73312 22.1462 2.63424 21.947 2.43648 21.7478L2.43696 21.7478ZM3.72144 26.9261C3.52368 26.8267 3.32592 26.6275 3.32592 26.2291C3.52368 26.2291 3.72144 26.3285 3.9192 26.2291C4.11696 26.2291 4.31519 26.1298 4.41359 26.4283C4.41359 26.5277 4.51296 26.7269 4.3152 26.8267C4.11744 27.0259 3.9192 27.1253 3.72144 26.9261ZM5.50176 27.5237C5.40288 27.3245 5.50175 27.1253 5.69951 27.1253C5.79839 27.0259 5.99615 26.9261 5.99615 27.2251C5.99615 27.4243 6.19391 27.6235 5.99615 27.7229C5.69951 27.9221 5.60064 27.623 5.50176 27.5237V27.5237ZM17.4672 29.2166C17.7638 29.316 17.8627 29.4158 17.8627 29.7144C17.5661 29.7144 17.5661 29.5152 17.4672 29.2166ZM12.4243 34.295C12.4243 34.295 12.4243 34.1957 12.4243 34.295C12.5232 34.1957 12.6221 34.295 12.6221 34.295C12.6221 34.295 12.6221 34.3949 12.5232 34.3949L12.4243 34.2955L12.4243 34.295ZM34.2778 38.3784L34.2778 38.4782L34.1789 38.4782L34.1789 38.3784L34.2778 38.3784ZM23.3016 38.0798C23.3016 38.1792 23.3016 38.279 23.2027 38.3784C23.005 38.4782 22.8072 38.4782 22.7083 38.279C22.6094 38.1792 22.7083 38.0798 22.8072 37.98C23.005 37.8806 23.2027 37.7808 23.3016 38.0798V38.0798ZM16.6762 36.5861L16.6762 36.6854C16.5773 36.6854 16.5773 36.6854 16.4784 36.5861C16.4784 36.5861 16.4784 36.4862 16.5773 36.4862C16.5773 36.5861 16.6762 36.5861 16.6762 36.5861V36.5861ZM33.7834 13.0838C33.8822 13.0838 33.8822 13.1837 33.7834 13.283L33.5856 13.283L33.5856 13.0838C33.6845 12.9845 33.7834 12.9845 33.7834 13.0838ZM12.6221 11.4902C12.721 11.6899 12.6221 11.7893 12.4243 11.8886C12.325 11.8886 12.0283 11.9885 12.0283 11.7893C11.9294 11.5901 11.8306 11.3909 12.1272 11.2915C12.325 11.1917 12.5232 11.2915 12.6216 11.4907L12.6221 11.4902ZM21.5213 11.0918C21.324 11.1917 21.2251 11.0918 21.2251 10.9925C21.1262 10.8931 21.2251 10.7933 21.324 10.6939C21.4229 10.6939 21.5218 10.6939 21.5218 10.7933L21.5218 11.0923L21.5213 11.0918ZM22.3128 10.6934L22.3128 10.7933L22.2139 10.7933L22.2139 10.6939C22.2139 10.5946 22.3128 10.6939 22.3128 10.6939L22.3128 10.6934ZM15.0936 10.4947C15.0936 10.4947 15.0936 10.5941 14.9952 10.6939C14.8963 10.6939 14.8963 10.6939 14.7974 10.5946L14.7974 10.4947L15.0941 10.4947L15.0936 10.4947ZM7.6776 7.20864L7.57872 7.308L7.47984 7.20864C7.47984 7.20864 7.47984 7.1088 7.57872 7.1088C7.57872 7.1088 7.6776 7.1088 7.6776 7.20864Z" fill="#FF646E"/><path d="M29.5311 13.9805C29.5311 13.8806 29.4322 13.7813 29.3333 13.8806C29.1355 13.9805 29.1355 14.0798 29.2344 14.1797C29.3333 14.279 29.3333 14.3789 29.5311 14.279C29.6299 14.279 29.6299 14.1797 29.5311 13.9805Z" fill="#FF646E"/><path d="M16.9123 25.0349C17.2877 25.4102 17.8498 25.3723 18.2251 25.0349L22.5 20.4974L22.5 31.26C22.5 31.7851 22.9128 32.16 23.4 32.16L24.6 32.16C25.1251 32.16 25.5 31.7851 25.5 31.26L25.5 20.4974L29.8123 25.0349C29.9921 25.1979 30.2261 25.2881 30.4687 25.2881C30.7114 25.2881 30.9453 25.1979 31.1251 25.0349L31.9502 24.2102C32.2877 23.8349 32.2877 23.2723 31.9502 22.9349L24.6374 15.6226C24.3 15.2851 23.7374 15.2851 23.3626 15.6226L16.0877 22.9344C15.7502 23.2718 15.7502 23.8344 16.0877 24.2098L16.9123 25.0344L16.9123 25.0349Z" fill="white"/></g><defs><clipPath id="clip0_0_3"><rect width="48" height="48" fill="white" transform="translate(0 48) rotate(-90)"/></clipPath></defs></svg> </button></div> <!-- Mini Cart --><div class="cart-sidebar"><div class="cart-sidebar-header"><p>Warenkorb</p> <a href="#" class="cart-sidebar-close-button" aria-label="Close"><i class="icon-close"></i></a></div><div class="cart-sidebar-scroll"><div class="widget_shopping_cart_content"><p class="woocommerce-mini-cart__empty-message"><i class="icon-shopping-bag"></i>Du hast noch keine Produkte in deinem Warenkorb.<a class="button outline coral" href="https://www.eathappy.de/produkte/" class="button">ZU UNSEREN PRODUKTEN</a></p></div></div></div><div class="location-modal tabs-nav-parent"><div class="location-modal-inner"> <!-- Close Button --> <a href="#" class="js-location-modal-close-button" aria-label="Close"><i class="icon-close"></i></a><div class="h4">ABHOLORT</div><div class="location-modal-ajax"><p class="ajax-loading-message">Laden...</p></div></div></div> <!--googleoff: all--><div data-nosnippet><div id="BorlabsCookieBoxWrap"><div
+ id="BorlabsCookieBox"
+ class="BorlabsCookie"
+ role="dialog"
+ aria-labelledby="CookieBoxTextHeadline"
+ aria-describedby="CookieBoxTextDescription"
+ aria-modal="true"
+><div class="middle-center" style="display: none;"><div class="_brlbs-box-wrap"><div class="_brlbs-box _brlbs-box-advanced"><div class="cookie-box"><div class="container"><div class="row"><div class="col-12"><div class="_brlbs-flex-center"> <img
+ width="32"
+ height="32"
+ class="cookie-logo"
+ src="https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg"
+ srcset="https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg, https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg 2x"
+ alt="Cookies"
+ aria-hidden="true"
+ > <span role="heading" aria-level="3" class="_brlbs-h3" id="CookieBoxTextHeadline">Cookies</span></div><p id="CookieBoxTextDescription"><span class="_brlbs-paragraph _brlbs-text-description">Wir nutzen Cookies auf unserer Website. Einige sind essenziell, während andere uns dabei helfen, die Nutzererfahrung dieser Website zu verbessern.</span></p><fieldset><legend class="sr-only">Cookies</legend><ul><li> <label class="_brlbs-checkbox"> Essenziell <input
+ id="checkbox-essential"
+ tabindex="0"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="essential"
+ checked                                                                 disabled                                                                data-borlabs-cookie-checkbox
+ > <span class="_brlbs-checkbox-indicator"></span> </label></li><li> <label class="_brlbs-checkbox"> Statistiken <input
+ id="checkbox-statistics"
+ tabindex="0"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="statistics"
+ checked                                                                                                                                data-borlabs-cookie-checkbox
+ > <span class="_brlbs-checkbox-indicator"></span> </label></li><li> <label class="_brlbs-checkbox"> Marketing <input
+ id="checkbox-marketing"
+ tabindex="0"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="marketing"
+ checked                                                                                                                                data-borlabs-cookie-checkbox
+ > <span class="_brlbs-checkbox-indicator"></span> </label></li><li> <label class="_brlbs-checkbox"> Externe Medien <input
+ id="checkbox-external-media"
+ tabindex="0"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="external-media"
+ checked                                                                                                                                data-borlabs-cookie-checkbox
+ > <span class="_brlbs-checkbox-indicator"></span> </label></li></ul></fieldset><p class="_brlbs-accept"> <a
+ href="#"
+ tabindex="0"
+ role="button"
+ class="_brlbs-btn _brlbs-btn-accept-all _brlbs-cursor"
+ data-cookie-accept-all
+ > Alle akzeptieren </a></p><p class="_brlbs-accept"> <a
+ href="#"
+ tabindex="0"
+ role="button"
+ id="CookieBoxSaveButton"
+ class="_brlbs-btn _brlbs-cursor"
+ data-cookie-accept
+ > Speichern </a></p><p class="_brlbs-refuse-btn"> <a
+ class="_brlbs-btn _brlbs-cursor"
+ href="#"
+ tabindex="0"
+ role="button"
+ data-cookie-refuse
+ > Ablehnen </a></p><p class="_brlbs-manage-btn "> <a href="#" class="_brlbs-cursor _brlbs-btn " tabindex="0" role="button" data-cookie-individual> Individuelle Datenschutzeinstellungen </a></p><p class="_brlbs-legal"> <a href="#" class="_brlbs-cursor" tabindex="0" role="button" data-cookie-individual> Cookie-Details </a> <span class="_brlbs-separator"></span> <a href="https://www.eathappy.de/datenschutzerklaerung/" tabindex="0" role="button"> Datenschutzerklärung </a> <span class="_brlbs-separator"></span> <a href="https://www.eathappy.de/impressum/" tabindex="0" role="button"> Impressum </a></p></div></div></div></div><div
+ class="cookie-preference"
+ aria-hidden="true"
+ role="dialog"
+ aria-describedby="CookiePrefDescription"
+ aria-modal="true"
+><div class="container not-visible"><div class="row no-gutters"><div class="col-12"><div class="row no-gutters align-items-top"><div class="col-12"><div class="_brlbs-flex-center"> <img
+ width="32"
+ height="32"
+ class="cookie-logo"
+ src="https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg"
+ srcset="https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg, https://www.eathappy.de/wp-content/uploads/2022/08/cookie.svg 2x"
+ alt="Cookies"
+ > <span role="heading" aria-level="3" class="_brlbs-h3">Cookies</span></div><p id="CookiePrefDescription"> <span class="_brlbs-paragraph _brlbs-text-description">Hier findest du eine Übersicht über alle verwendeten Cookies. Du kannst deine Einwilligung zu ganzen Kategorien geben oder dir weitere Informationen anzeigen lassen und so nur bestimmte Cookies auswählen.</span></p><div class="row no-gutters align-items-center"><div class="col-12 col-sm-10"><p class="_brlbs-accept"> <a
+ href="#"
+ class="_brlbs-btn _brlbs-btn-accept-all _brlbs-cursor"
+ tabindex="0"
+ role="button"
+ data-cookie-accept-all
+ > Alle akzeptieren </a> <a
+ href="#"
+ id="CookiePrefSave"
+ tabindex="0"
+ role="button"
+ class="_brlbs-btn _brlbs-cursor"
+ data-cookie-accept
+ > Speichern </a> <a
+ href="#"
+ class="_brlbs-btn _brlbs-refuse-btn _brlbs-cursor"
+ tabindex="0"
+ role="button"
+ data-cookie-refuse
+ > Nur essenzielle Cookies akzeptieren </a></p></div><div class="col-12 col-sm-2"><p class="_brlbs-refuse"> <a
+ href="#"
+ class="_brlbs-cursor"
+ tabindex="0"
+ role="button"
+ data-cookie-back
+ > Zurück </a></p></div></div></div></div><div data-cookie-accordion><fieldset><legend class="sr-only">Cookies</legend><div class="bcac-item"><div class="d-flex flex-row"> <label class="w-75"> <span role="heading" aria-level="4" class="_brlbs-h4">Essenziell (2)</span> </label><div class="w-25 text-right"></div></div><div class="d-block"><p>Essenzielle Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.</p><p class="text-center"> <a
+ href="#"
+ class="_brlbs-cursor d-block"
+ tabindex="0"
+ role="button"
+ data-cookie-accordion-target="essential"
+ > <span data-cookie-accordion-status="show"> Cookie-Informationen anzeigen </span> <span data-cookie-accordion-status="hide" class="borlabs-hide"> Cookie-Informationen ausblenden </span> </a></p></div><div
+ class="borlabs-hide"
+ data-cookie-accordion-parent="essential"
+ ><table><tr><th>Name</th><td> <label> Borlabs Cookie </label></td></tr><tr><th>Anbieter</th><td>Eigentümer dieser Website<span>, </span><a href="https://www.eathappy.de/impressum/">Impressum</a></td></tr><tr><th>Zweck</th><td>Speichert die Einstellungen der Besucher, die in der Cookie Box von Borlabs Cookie ausgewählt wurden.</td></tr><tr><th>Cookie Name</th><td>borlabs-cookie</td></tr><tr><th>Cookie Laufzeit</th><td>1 Jahr</td></tr></table><table><tr><th>Name</th><td> <label> Google reCAPTCHA </label></td></tr><tr><th>Anbieter</th><td>Google LLC</td></tr><tr><th>Zweck</th><td>Cookie von Google zur Unterscheidung zwischen Menschen und Bots.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://policies.google.com/privacy?hl=de"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://policies.google.com/privacy?hl=de </a></td></tr><tr><th>Cookie Name</th><td>rc::c</td></tr></table></div></div><div class="bcac-item"><div class="d-flex flex-row"> <label class="w-75"> <span role="heading" aria-level="4" class="_brlbs-h4">Statistiken (1)</span> </label><div class="w-25 text-right"> <label class="_brlbs-btn-switch"> <span class="sr-only">Statistiken</span> <input
+ tabindex="0"
+ id="borlabs-cookie-group-statistics"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="statistics"
+ checked                                                            data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"> </span> </label></div></div><div class="d-block"><p>Statistik Cookies erfassen Informationen anonym. Diese Informationen helfen uns zu verstehen, wie unsere Besucher unsere Website nutzen.</p><p class="text-center"> <a
+ href="#"
+ class="_brlbs-cursor d-block"
+ tabindex="0"
+ role="button"
+ data-cookie-accordion-target="statistics"
+ > <span data-cookie-accordion-status="show"> Cookie-Informationen anzeigen </span> <span data-cookie-accordion-status="hide" class="borlabs-hide"> Cookie-Informationen ausblenden </span> </a></p></div><div
+ class="borlabs-hide"
+ data-cookie-accordion-parent="statistics"
+ ><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Google Analytics</span> <input
+ id="borlabs-cookie-google-analytics"
+ tabindex="0"
+ type="checkbox" data-cookie-group="statistics"
+ name="cookies[statistics][]"
+ value="google-analytics"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Google Analytics </label></td></tr><tr><th>Anbieter</th><td>Google LLC</td></tr><tr><th>Zweck</th><td>Cookie von Google für Website-Analysen. Erzeugt statistische Daten darüber, wie der Besucher die Website nutzt.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://policies.google.com/privacy?hl=de"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://policies.google.com/privacy?hl=de </a></td></tr><tr><th>Cookie Name</th><td>_ga,_gat,_gid</td></tr><tr><th>Cookie Laufzeit</th><td>2 Jahre</td></tr></table></div></div><div class="bcac-item"><div class="d-flex flex-row"> <label class="w-75"> <span role="heading" aria-level="4" class="_brlbs-h4">Marketing (3)</span> </label><div class="w-25 text-right"> <label class="_brlbs-btn-switch"> <span class="sr-only">Marketing</span> <input
+ tabindex="0"
+ id="borlabs-cookie-group-marketing"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="marketing"
+ checked                                                            data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"> </span> </label></div></div><div class="d-block"><p>Marketing-Cookies werden von Drittanbietern oder Publishern verwendet, um personalisierte Werbung anzuzeigen. Sie tun dies, indem sie Besucher über Websites hinweg verfolgen.</p><p class="text-center"> <a
+ href="#"
+ class="_brlbs-cursor d-block"
+ tabindex="0"
+ role="button"
+ data-cookie-accordion-target="marketing"
+ > <span data-cookie-accordion-status="show"> Cookie-Informationen anzeigen </span> <span data-cookie-accordion-status="hide" class="borlabs-hide"> Cookie-Informationen ausblenden </span> </a></p></div><div
+ class="borlabs-hide"
+ data-cookie-accordion-parent="marketing"
+ ><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Facebook Pixel</span> <input
+ id="borlabs-cookie-facebook-pixel"
+ tabindex="0"
+ type="checkbox" data-cookie-group="marketing"
+ name="cookies[marketing][]"
+ value="facebook-pixel"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Facebook Pixel </label></td></tr><tr><th>Anbieter</th><td>Facebook Ireland Limited</td></tr><tr><th>Zweck</th><td>Cookie von Facebook, das für Website-Analysen, Ad-Targeting und Anzeigenmessung verwendet wird.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://www.facebook.com/policies/cookies"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://www.facebook.com/policies/cookies </a></td></tr><tr><th>Cookie Name</th><td>_fbp,act,c_user,datr,fr,m_pixel_ration,pl,presence,sb,spin,wd,xs</td></tr><tr><th>Cookie Laufzeit</th><td>Sitzung / 1 Jahr</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Google Tag Manager</span> <input
+ id="borlabs-cookie-google-tag-manager"
+ tabindex="0"
+ type="checkbox" data-cookie-group="marketing"
+ name="cookies[marketing][]"
+ value="google-tag-manager"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Google Tag Manager </label></td></tr><tr><th>Anbieter</th><td>Google LLC</td></tr><tr><th>Zweck</th><td>Cookie von Google zur Steuerung der erweiterten Script- und Ereignisbehandlung.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://policies.google.com/privacy?hl=de"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://policies.google.com/privacy?hl=de </a></td></tr><tr><th>Cookie Name</th><td>_ga, _gat, _gid</td></tr><tr><th>Cookie Laufzeit</th><td>2 Jahre</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Hotjar</span> <input
+ id="borlabs-cookie-hotjar"
+ tabindex="0"
+ type="checkbox" data-cookie-group="marketing"
+ name="cookies[marketing][]"
+ value="hotjar"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Hotjar </label></td></tr><tr><th>Anbieter</th><td>Hotjar Limited</td></tr><tr><th>Zweck</th><td>Cookie von Hotjar für Website-Analysen. Erzeugt Daten (Mausbewegungen, Mausklicks, Scrollhöhen, etc.) darüber, wie der Besucher die Website nutzt.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://www.hotjar.com/privacy/"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://www.hotjar.com/privacy/ </a></td></tr><tr><th>Cookie Name</th><td>_hjAbsoluteSessionInProgress, _hjid, _hjIncludedInSample, _hjTLDTest</td></tr><tr><th>Cookie Laufzeit</th><td>Sitzungsdauer</td></tr></table></div></div><div class="bcac-item"><div class="d-flex flex-row"> <label class="w-75"> <span role="heading" aria-level="4" class="_brlbs-h4">Externe Medien (7)</span> </label><div class="w-25 text-right"> <label class="_brlbs-btn-switch"> <span class="sr-only">Externe Medien</span> <input
+ tabindex="0"
+ id="borlabs-cookie-group-external-media"
+ type="checkbox"
+ name="cookieGroup[]"
+ value="external-media"
+ checked                                                            data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"> </span> </label></div></div><div class="d-block"><p>Inhalte von Videoplattformen und Social-Media-Plattformen werden standardmäßig blockiert. Wenn Cookies von externen Medien akzeptiert werden, bedarf der Zugriff auf diese Inhalte keiner manuellen Einwilligung mehr.</p><p class="text-center"> <a
+ href="#"
+ class="_brlbs-cursor d-block"
+ tabindex="0"
+ role="button"
+ data-cookie-accordion-target="external-media"
+ > <span data-cookie-accordion-status="show"> Cookie-Informationen anzeigen </span> <span data-cookie-accordion-status="hide" class="borlabs-hide"> Cookie-Informationen ausblenden </span> </a></p></div><div
+ class="borlabs-hide"
+ data-cookie-accordion-parent="external-media"
+ ><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Facebook</span> <input
+ id="borlabs-cookie-facebook"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="facebook"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Facebook </label></td></tr><tr><th>Anbieter</th><td>Meta Platforms Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland</td></tr><tr><th>Zweck</th><td>Wird verwendet, um Facebook-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://www.facebook.com/privacy/explanation"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://www.facebook.com/privacy/explanation </a></td></tr><tr><th>Host(s)</th><td>.facebook.com</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Google Maps</span> <input
+ id="borlabs-cookie-googlemaps"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="googlemaps"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Google Maps </label></td></tr><tr><th>Anbieter</th><td>Google</td></tr><tr><th>Zweck</th><td>Cookie von Google zum Entsperren von Google Maps-Inhalten.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://policies.google.com/privacy"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://policies.google.com/privacy </a></td></tr><tr><th>Host(s)</th><td>.google.com</td></tr><tr><th>Cookie Name</th><td>NID</td></tr><tr><th>Cookie Laufzeit</th><td>6 Monate</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Instagram</span> <input
+ id="borlabs-cookie-instagram"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="instagram"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Instagram </label></td></tr><tr><th>Anbieter</th><td>Meta Platforms Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland</td></tr><tr><th>Zweck</th><td>Wird verwendet, um Instagram-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://www.instagram.com/legal/privacy/"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://www.instagram.com/legal/privacy/ </a></td></tr><tr><th>Host(s)</th><td>.instagram.com</td></tr><tr><th>Cookie Name</th><td>pigeon_state</td></tr><tr><th>Cookie Laufzeit</th><td>Sitzung</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">OpenStreetMap</span> <input
+ id="borlabs-cookie-openstreetmap"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="openstreetmap"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> OpenStreetMap </label></td></tr><tr><th>Anbieter</th><td>Openstreetmap Foundation, St John’s Innovation Centre, Cowley Road, Cambridge CB4 0WS, United Kingdom</td></tr><tr><th>Zweck</th><td>Wird verwendet, um OpenStreetMap-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://wiki.osmfoundation.org/wiki/Privacy_Policy"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://wiki.osmfoundation.org/wiki/Privacy_Policy </a></td></tr><tr><th>Host(s)</th><td>.openstreetmap.org</td></tr><tr><th>Cookie Name</th><td>_osm_location, _osm_session, _osm_totp_token, _osm_welcome, _pk_id., _pk_ref., _pk_ses., qos_token</td></tr><tr><th>Cookie Laufzeit</th><td>1-10 Jahre</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Twitter</span> <input
+ id="borlabs-cookie-twitter"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="twitter"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Twitter </label></td></tr><tr><th>Anbieter</th><td>Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2, D02 AX07, Ireland</td></tr><tr><th>Zweck</th><td>Wird verwendet, um Twitter-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://twitter.com/privacy"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://twitter.com/privacy </a></td></tr><tr><th>Host(s)</th><td>.twimg.com, .twitter.com</td></tr><tr><th>Cookie Name</th><td>__widgetsettings, local_storage_support_test</td></tr><tr><th>Cookie Laufzeit</th><td>Unbegrenzt</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">Vimeo</span> <input
+ id="borlabs-cookie-vimeo"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="vimeo"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> Vimeo </label></td></tr><tr><th>Anbieter</th><td>Vimeo Inc., 555 West 18th Street, New York, New York 10011, USA</td></tr><tr><th>Zweck</th><td>Wird verwendet, um Vimeo-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://vimeo.com/privacy"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://vimeo.com/privacy </a></td></tr><tr><th>Host(s)</th><td>player.vimeo.com</td></tr><tr><th>Cookie Name</th><td>vuid</td></tr><tr><th>Cookie Laufzeit</th><td>2 Jahre</td></tr></table><table><tr><th>Akzeptieren</th><td> <label class="_brlbs-btn-switch _brlbs-btn-switch--textRight"> <span class="sr-only">YouTube</span> <input
+ id="borlabs-cookie-youtube"
+ tabindex="0"
+ type="checkbox" data-cookie-group="external-media"
+ name="cookies[external-media][]"
+ value="youtube"
+ checked                                                                        data-borlabs-cookie-switch
+ /> <span class="_brlbs-slider"></span> <span
+ class="_brlbs-btn-switch-status"
+ data-active="An"
+ data-inactive="Aus"
+ aria-hidden="true"> </span> </label></td></tr><tr><th>Name</th><td> <label> YouTube </label></td></tr><tr><th>Anbieter</th><td>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland</td></tr><tr><th>Zweck</th><td>Wird verwendet, um YouTube-Inhalte zu entsperren.</td></tr><tr><th>Datenschutzerklärung</th><td class="_brlbs-pp-url"> <a
+ href="https://policies.google.com/privacy"
+ target="_blank"
+ rel="nofollow noopener noreferrer"
+ > https://policies.google.com/privacy </a></td></tr><tr><th>Host(s)</th><td>google.com</td></tr><tr><th>Cookie Name</th><td>NID</td></tr><tr><th>Cookie Laufzeit</th><td>6 Monate</td></tr></table></div></div></fieldset></div><div class="d-flex justify-content-between"><p class="_brlbs-branding flex-fill"></p><p class="_brlbs-legal flex-fill"> <a href="https://www.eathappy.de/datenschutzerklaerung/"> Datenschutzerklärung </a> <span class="_brlbs-separator"></span> <a href="https://www.eathappy.de/impressum/"> Impressum </a></p></div></div></div></div></div></div></div></div></div></div></div><!--googleon: all--> <script type="text/javascript">(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();</script> <script type="text/javascript">/* MonsterInsights Scroll Tracking */
+		if ( typeof(jQuery) !== 'undefined' ) {
+		jQuery( document ).ready(function(){
+		function monsterinsights_scroll_tracking_load() {
+		if ( ( typeof(__gaTracker) !== 'undefined' && __gaTracker && __gaTracker.hasOwnProperty( "loaded" ) && __gaTracker.loaded == true ) || ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) ) {
+		(function(factory) {
+		factory(jQuery);
+		}(function($) {
+
+		/* Scroll Depth */
+		"use strict";
+		var defaults = {
+		percentage: true
+		};
+
+		var $window = $(window),
+		cache = [],
+		scrollEventBound = false,
+		lastPixelDepth = 0;
+
+		/*
+		* Plugin
+		*/
+
+		$.scrollDepth = function(options) {
+
+		var startTime = +new Date();
+
+		options = $.extend({}, defaults, options);
+
+		/*
+		* Functions
+		*/
+
+		function sendEvent(action, label, scrollDistance, timing) {
+		if ( 'undefined' === typeof MonsterInsightsObject || 'undefined' === typeof MonsterInsightsObject.sendEvent ) {
+		return;
+		}
+			var type        = 'event';
+	var eventName   = action;
+	var fieldsArray = {
+	event_category : 'Scroll Depth',
+	event_label    : label,
+	value          : 1,
+	non_interaction: true,
+	send_to: 'UA-78256699-1'
+	};
+
+	MonsterInsightsObject.sendEvent( type, eventName, fieldsArray );
+
+	if (arguments.length > 3) {
+	var type        = 'event';
+	var eventName   = 'timing_complete';
+	fieldsArray = {
+	event_category : 'Scroll Depth',
+	name           : action,
+	event_label    : label,
+	value          : timing,
+	non_interaction: 1,
+	send_to: 'UA-78256699-1'
+	};
+
+	MonsterInsightsObject.sendEvent( type, eventName, fieldsArray );
+	}
+			}
+
+		function calculateMarks(docHeight) {
+		return {
+		'25%' : parseInt(docHeight * 0.25, 10),
+		'50%' : parseInt(docHeight * 0.50, 10),
+		'75%' : parseInt(docHeight * 0.75, 10),
+		/* Cushion to trigger 100% event in iOS */
+		'100%': docHeight - 5
+		};
+		}
+
+		function checkMarks(marks, scrollDistance, timing) {
+		/* Check each active mark */
+		$.each(marks, function(key, val) {
+		if ( $.inArray(key, cache) === -1 && scrollDistance >= val ) {
+		sendEvent('Percentage', key, scrollDistance, timing);
+		cache.push(key);
+		}
+		});
+		}
+
+		function rounded(scrollDistance) {
+		/* Returns String */
+		return (Math.floor(scrollDistance/250) * 250).toString();
+		}
+
+		function init() {
+		bindScrollDepth();
+		}
+
+		/*
+		* Public Methods
+		*/
+
+		/* Reset Scroll Depth with the originally initialized options */
+		$.scrollDepth.reset = function() {
+		cache = [];
+		lastPixelDepth = 0;
+		$window.off('scroll.scrollDepth');
+		bindScrollDepth();
+		};
+
+		/* Add DOM elements to be tracked */
+		$.scrollDepth.addElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.merge(options.elements, elems);
+
+		/* If scroll event has been unbound from window, rebind */
+		if (!scrollEventBound) {
+		bindScrollDepth();
+		}
+
+		};
+
+		/* Remove DOM elements currently tracked */
+		$.scrollDepth.removeElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.each(elems, function(index, elem) {
+
+		var inElementsArray = $.inArray(elem, options.elements);
+		var inCacheArray = $.inArray(elem, cache);
+
+		if (inElementsArray != -1) {
+		options.elements.splice(inElementsArray, 1);
+		}
+
+		if (inCacheArray != -1) {
+		cache.splice(inCacheArray, 1);
+		}
+
+		});
+
+		};
+
+		/*
+		* Throttle function borrowed from:
+		* Underscore.js 1.5.2
+		* http://underscorejs.org
+		* (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+		* Underscore may be freely distributed under the MIT license.
+		*/
+
+		function throttle(func, wait) {
+		var context, args, result;
+		var timeout = null;
+		var previous = 0;
+		var later = function() {
+		previous = new Date;
+		timeout = null;
+		result = func.apply(context, args);
+		};
+		return function() {
+		var now = new Date;
+		if (!previous) previous = now;
+		var remaining = wait - (now - previous);
+		context = this;
+		args = arguments;
+		if (remaining <= 0) {
+		clearTimeout(timeout);
+		timeout = null;
+		previous = now;
+		result = func.apply(context, args);
+		} else if (!timeout) {
+		timeout = setTimeout(later, remaining);
+		}
+		return result;
+		};
+		}
+
+		/*
+		* Scroll Event
+		*/
+
+		function bindScrollDepth() {
+
+		scrollEventBound = true;
+
+		$window.on('scroll.scrollDepth', throttle(function() {
+		/*
+		* We calculate document and window height on each scroll event to
+		* account for dynamic DOM changes.
+		*/
+
+		var docHeight = $(document).height(),
+		winHeight = window.innerHeight ? window.innerHeight : $window.height(),
+		scrollDistance = $window.scrollTop() + winHeight,
+
+		/* Recalculate percentage marks */
+		marks = calculateMarks(docHeight),
+
+		/* Timing */
+		timing = +new Date - startTime;
+
+		checkMarks(marks, scrollDistance, timing);
+		}, 500));
+
+		}
+
+		init();
+		};
+
+		/* UMD export */
+		return $.scrollDepth;
+
+		}));
+
+		jQuery.scrollDepth();
+		} else {
+		setTimeout(monsterinsights_scroll_tracking_load, 200);
+		}
+		}
+		monsterinsights_scroll_tracking_load();
+		});
+		}
+		/* End MonsterInsights Scroll Tracking */</script><script defer type='text/javascript' src='https://www.eathappy.de/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.9.4' id='jquery-blockui-js'></script> <script type='text/javascript' id='wc-add-to-cart-js-extra'>/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Warenkorb anzeigen","cart_url":"https:\/\/www.eathappy.de\/warenkorb\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */</script> <script type='text/javascript' id='woocommerce-js-extra'>/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */</script> <script type='text/javascript' id='wc-cart-fragments-js-extra'>/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_25fb1d7292cae64ea1719a0ad61b87c5","fragment_name":"wc_fragments_25fb1d7292cae64ea1719a0ad61b87c5","request_timeout":"5000"};
+/* ]]> */</script> <script type='text/javascript' id='monsterinsights-user-journey-js-extra'>/* <![CDATA[ */
+var monsterinsights_user_journey = {"is_ssl":"1"};
+/* ]]> */</script> <script>window.addEventListener('mounted', (e) => { 
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+ }, false);</script> <script>window.addEventListener('mounted', (e) => { 
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-12-09 16:45:47+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"de"},"Notifications":["Benachrichtigungen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+ }, false);</script> <script type='text/javascript' defer='defer' src='https://www.eathappy.de/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.6.8' id='gform_json-js'></script> <script type='text/javascript' id='gform_gravityforms-js-extra'>/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Die","wednesday":"Mit","thursday":"Don","friday":"Fre","saturday":"Sam","sunday":"Son"},"months":{"january":"Januar","february":"Februar","march":"M\u00e4rz","april":"April","may":"Mai","june":"Juni","july":"Juli","august":"August","september":"September","october":"Oktober","november":"November","december":"Dezember"},"firstDay":1,"iconText":"Datum ausw\u00e4hlen"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dieser Dateityp kann nicht hochgeladen werden. Zul\u00e4ssig sind die folgenden:","delete_file":"Diese Datei l\u00f6schen","in_progress":"In Bearbeitung","file_exceeds_limit":"Maximale Dateigr\u00f6\u00dfe \u00fcberschritten","illegal_extension":"Dateityp nicht zul\u00e4ssig.","max_reached":"Maximale Dateianzahl erreicht","unknown_error":"Ein Problem ist beim Speichern der Datei auf dem Server aufgetreten.","currently_uploading":"Bitte warte bis alle Dateien vollst\u00e4ndig hochgeladen wurden.","cancel":"Abbrechen","cancel_upload":"Upload abbrechen","cancelled":"Abgebrochen"},"vars":{"images_url":"https:\/\/www.eathappy.de\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https:\/\/www.eathappy.de\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.eathappy.de\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"Neue Zeile hinzugef\u00fcgt.","rowRemoved":"Zeile entfernt","formSaved":"Das Formular wurde gespeichert. Der Inhalt beinhaltet den Link zum Zur\u00fcckkehren und Vervollst\u00e4ndigen des Formulars."}};
+/* ]]> */</script> <script type='text/javascript' id='borlabs-cookie-js-extra'>/* <![CDATA[ */
+var borlabsCookieConfig = {"ajaxURL":"https:\/\/www.eathappy.de\/wp-admin\/admin-ajax.php","language":"de","animation":"","animationDelay":"","animationIn":"_brlbs-zoomIn","animationOut":"_brlbs-zoomOut","blockContent":"","boxLayout":"box","boxLayoutAdvanced":"1","automaticCookieDomainAndPath":"1","cookieDomain":"www.eathappy.de","cookiePath":"\/","cookieSecure":"1","cookieLifetime":"365","cookieLifetimeEssentialOnly":"182","crossDomainCookie":[],"cookieBeforeConsent":"","cookiesForBots":"","cookieVersion":"1","hideCookieBoxOnPages":[],"respectDoNotTrack":"","reloadAfterConsent":"","reloadAfterOptOut":"","showCookieBox":"1","cookieBoxIntegration":"html","ignorePreSelectStatus":"1","cookies":{"essential":["borlabs-cookie","google-recaptcha"],"statistics":["google-analytics"],"marketing":["facebook-pixel","google-tag-manager","hotjar"],"external-media":["facebook","googlemaps","instagram","openstreetmap","twitter","vimeo","youtube"]}};
+var borlabsCookieCookies = {"essential":{"borlabs-cookie":{"cookieNameList":{"borlabs-cookie":"borlabs-cookie"},"settings":{"blockCookiesBeforeConsent":"0"}},"google-recaptcha":{"cookieNameList":{"rc::c":"rc::c"},"settings":{"blockCookiesBeforeConsent":"1"}}},"statistics":{"google-analytics":{"cookieNameList":{"_ga":"_ga","_gat":"_gat","_gid":"_gid"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"1","trackingId":"UA-78256699-9"},"optInJS":"","optOutJS":""}},"marketing":{"facebook-pixel":{"cookieNameList":{"_fbp":"_fbp","act":"act","c_user":"c_user","datr":"datr","fr":"fr","m_pixel_ration":"m_pixel_ration","pl":"pl","presence":"presence","sb":"sb","spin":"spin","wd":"wd","xs":"xs"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"1","pixelId":"3699801013403764"},"optInJS":"","optOutJS":""},"google-tag-manager":{"cookieNameList":{"_ga":"_ga","_gat":"_gat","_gid":"_gid"},"settings":{"blockCookiesBeforeConsent":"1","gtmId":"GTM-5F4ZLJN"},"optInJS":"PCEtLSBHb29nbGUgVGFnIE1hbmFnZXIgLS0+DQo8c2NyaXB0PihmdW5jdGlvbih3LGQscyxsLGkpe3dbbF09d1tsXXx8W107d1tsXS5wdXNoKHsiZ3RtLnN0YXJ0IjoNCm5ldyBEYXRlKCkuZ2V0VGltZSgpLGV2ZW50OiJndG0uanMifSk7dmFyIGY9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSwNCmo9ZC5jcmVhdGVFbGVtZW50KHMpLGRsPWwhPSJkYXRhTGF5ZXIiPyImbD0iK2w6IiI7ai5hc3luYz10cnVlO2ouc3JjPQ0KImh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0bS5qcz9pZD0iK2krZGw7Zi5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqLGYpOw0KfSkod2luZG93LGRvY3VtZW50LCJzY3JpcHQiLCJkYXRhTGF5ZXIiLCJHVE0tNUY0WkxKTiIpOzwvc2NyaXB0Pg0KPCEtLSBFbmQgR29vZ2xlIFRhZyBNYW5hZ2VyIC0tPg==","optOutJS":""},"hotjar":{"cookieNameList":{"_hjAbsoluteSessionInProgress":"_hjAbsoluteSessionInProgress","_hjid":"_hjid","_hjIncludedInSample":"_hjIncludedInSample","_hjTLDTest":"_hjTLDTest"},"settings":{"blockCookiesBeforeConsent":"1","prioritize":"0"},"optInJS":"PHNjcmlwdD4NCndpbmRvdy5ib3JsYWJzQ29va2llT3B0SW5Ib3RqYXIgPSB0cnVlOw0Kd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107DQogIHdpbmRvdy5kYXRhTGF5ZXIucHVzaCh7DQogICAgZXZlbnQ6ICdib3JsYWJzQ29va2llT3B0SW5Ib3RqYXInLA0KICB9KTsNCjwvc2NyaXB0Pg==","optOutJS":""}},"external-media":{"facebook":{"cookieNameList":[],"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoImZhY2Vib29rIik7IH08L3NjcmlwdD4=","optOutJS":""},"googlemaps":{"cookieNameList":{"NID":"NID"},"settings":{"blockCookiesBeforeConsent":"1"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoImdvb2dsZW1hcHMiKTsgfTwvc2NyaXB0Pg==","optOutJS":""},"instagram":{"cookieNameList":{"pigeon_state":"pigeon_state"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoImluc3RhZ3JhbSIpOyB9PC9zY3JpcHQ+","optOutJS":""},"openstreetmap":{"cookieNameList":{"_osm_location":"_osm_location","_osm_session":"_osm_session","_osm_totp_token":"_osm_totp_token","_osm_welcome":"_osm_welcome","_pk_id.":"_pk_id.","_pk_ref.":"_pk_ref.","_pk_ses.":"_pk_ses.","qos_token":"qos_token"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoIm9wZW5zdHJlZXRtYXAiKTsgfTwvc2NyaXB0Pg==","optOutJS":""},"twitter":{"cookieNameList":{"__widgetsettings":"__widgetsettings","local_storage_support_test":"local_storage_support_test"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoInR3aXR0ZXIiKTsgfTwvc2NyaXB0Pg==","optOutJS":""},"vimeo":{"cookieNameList":{"vuid":"vuid"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoInZpbWVvIik7IH08L3NjcmlwdD4=","optOutJS":""},"youtube":{"cookieNameList":{"NID":"NID"},"settings":{"blockCookiesBeforeConsent":"0","prioritize":"0"},"optInJS":"PHNjcmlwdD5pZih0eXBlb2Ygd2luZG93LkJvcmxhYnNDb29raWUgPT09ICJvYmplY3QiKSB7IHdpbmRvdy5Cb3JsYWJzQ29va2llLnVuYmxvY2tDb250ZW50SWQoInlvdXR1YmUiKTsgfTwvc2NyaXB0Pg==","optOutJS":""}}};
+/* ]]> */</script> <script defer type='text/javascript' src='https://www.eathappy.de/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie.min.js?ver=2.2.56' id='borlabs-cookie-js'></script> <script type='text/javascript' id='borlabs-cookie-js-after'>document.addEventListener("DOMContentLoaded", function (e) {
+var borlabsCookieContentBlocker = {"facebook": {"id": "facebook","global": function (contentBlockerData) {  },"init": function (el, contentBlockerData) { if(typeof FB === "object") { FB.XFBML.parse(el.parentElement); } },"settings": {"executeGlobalCodeBeforeUnblocking":false}},"default": {"id": "default","global": function (contentBlockerData) {  },"init": function (el, contentBlockerData) {  },"settings": {"executeGlobalCodeBeforeUnblocking":false}},"instagram": {"id": "instagram","global": function (contentBlockerData) {  },"init": function (el, contentBlockerData) { if (typeof instgrm === "object") { instgrm.Embeds.process(); } },"settings": {"executeGlobalCodeBeforeUnblocking":false}},"twitter": {"id": "twitter","global": function (contentBlockerData) {  },"init": function (el, contentBlockerData) {  },"settings": {"executeGlobalCodeBeforeUnblocking":false}},"vimeo": {"id": "vimeo","global": function (contentBlockerData) {  },"init": function (el, contentBlockerData) {  },"settings": {"executeGlobalCodeBeforeUnblocking":false,"saveThumbnails":false,"videoWrapper":false}}};
+    var BorlabsCookieInitCheck = function () {
+
+    if (typeof window.BorlabsCookie === "object" && typeof window.jQuery === "function") {
+
+        if (typeof borlabsCookiePrioritized !== "object") {
+            borlabsCookiePrioritized = { optInJS: {} };
+        }
+
+        window.BorlabsCookie.init(borlabsCookieConfig, borlabsCookieCookies, borlabsCookieContentBlocker, borlabsCookiePrioritized.optInJS);
+    } else {
+        window.setTimeout(BorlabsCookieInitCheck, 50);
+    }
+};
+
+BorlabsCookieInitCheck();});</script> <script type="text/javascript">gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );</script> <script type="text/javascript">gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [1, 1]) } );</script> <script data-custom>window.petite = {
+    "styles": [
+        "https://www.eathappy.de/wp-content/themes/eathappy/style.css?ver=1671008504",
+        "https://www.eathappy.de/wp-includes/css/classic-themes.min.css?ver=1",
+        "https://www.eathappy.de/wp-content/themes/eathappy/assets/vendor/flatpickr/flatpickr.min.css?ver=6.1.1",
+        "https://www.eathappy.de/wp-content/themes/eathappy/assets/vendor/slick/slick.css?ver=1670227665"
+    ],
+    "scripts": [
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/google-analytics-premium/assets/js/frontend-gtag.js?ver=8.10.0"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/vendor/flatpickr/flatpickr.js?ver=6.1.1"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/vendor/flatpickr/de.js?ver=6.1.1"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/vendor/slick/slick.min.js?ver=1670227665"
+        },
+        {
+            "role": "tracking",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/js/hotjar.js?ver=1670227660"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/js/synerise.js?ver=1670227659"
+        },
+        {
+            "role": "tracking",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/js/tiktok.js?ver=1670227659"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.9.4"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.9.4"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.9.4"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.9.4"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/monsterinsights-user-journey/assets/js/frontend/user-journey.js?ver=1.0.5"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-includes/js/dist/a11y.min.js?ver=ecce20f002eda4c19664"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.6.8"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/js/site.min.js?ver=1670837489"
+        },
+        {
+            "role": "important",
+            "type": "external",
+            "link": "https://www.eathappy.de/wp-content/themes/eathappy/assets/js/map.min.js?ver=1670227659"
+        }
+    ]
+};</script> <script data-custom async src="https://www.eathappy.de/wp-content/cache/autoptimize/js/autoptimize_single_c667ba6518d7e3bfee8a21235b061fa8.js?v=22.09.20"></script> </body></html> <!-- Label: begin from start took 0 since : 0 --> <!-- Label: header from start took 0.19158 since begin: 0.19166 --> <!-- Label: optimized_begin from start took 0.29314 since header: 0.10165 --> <!-- Label: optimized_finish from start took 0.29397 since optimized_begin: 0.00094 --> <!-- Label: finish from start took 0.29399 since optimized_finish: 0.00012 -->

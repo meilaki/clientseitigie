@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'CelloSansRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dark-mode {
+  background-color: rgb(27, 26, 26);
+  color: white;
+}
+
+.darkmode {
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  font-size: 1.3em;
+  background-color: navajowhite;
+  border: 2px solid black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.darkmode:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.mainContainer {
+  margin: 0px auto;
+  max-width: 100%;
+}
+
+.navbarContainer {
+  position: sticky;
+  top: 0;
+  color: white;
+  z-index: 5;
+  margin: 0px auto;
+  background-color: #173ca0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 2px solid white;
+}
+
+.navbarLeft,
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarRight i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbarRight i:hover {
+  color: #edf416;
+}
+
+.logo {
+  top: 10px;
+  cursor: pointer;
+}
+
+.logo,
+.footLogo {
+  left: 50%;
+  position: absolute;
+  width: 70px;
+}
+
+.navbarLeft a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+  margin: auto;
+}
+
+.navbarLeft a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.navbarLeft a:hover:after {
+  width: 100%;
+}
+
+.navbarLeft div,
+.navbarRight div {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0px;
+}
+
+.navbarRight i {
+  font-size: 30px;
+}
+
+.cart {
+  position: absolute;
+  top: -400px;
+  right: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 235, 211);
+  transition: 0.5s;
+  border: 2px solid rgb(255, 249, 249);
+}
+
+.cart h1 {
+  color: black;
+  padding: 5px 10px;
+}
+
+.cart.active {
+  top: 100%;
+}
+
+.opening h1 {
+  font-family: 'EptKazooMedium';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 60px;
+  margin: 0px;
+  position: relative;
+}
+
+.opening {
+  color: white;
+  padding: 100px 0px;
+  margin: 0px 0px;
+  background-color: #173ca0;
+  text-align: center;
+}
+
+.boxSection {
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.boxSection img {
+  width: 100%;
+}
+
+.boxSection {
+  font-family: 'RussischSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  background-color: #173ca0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxSections {
+  font-family: 'RussischSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  background-color: #173ca0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightSection {
+  top: 8px;
+  right: 16px;
+  position: absolute;
+  text-align: justify;
+  padding: 25px;
+}
+
+.rightSections {
+  max-width: 10px;
+}
+
+.words {
+  font-size: large;
+  font-weight: 300;
+  color: white;
+  margin-bottom: auto;
+}
+
+.mehrDazu {
+  margin-top: 10%;
+  background-color: #ff5714;
+  padding: 10px;
+  border-style: solid;
+  max-width: max-content;
+  border-radius: 40px;
+  border-width: thin;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.mehrDazu:hover {
+  background-color: white;
+}
+
+.rightSection img {
+  max-width: 500px;
+}
+
+.colorSection {
+  padding: 20px 20px;
+  font-weight: 100;
+  color: rgb(55, 42, 42);
+  background-color: #f6dfe3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colorSection i {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  color: rgba(255, 0, 0, 0.5);
+  font-size: 45px;
+  text-align: center;
+}
+
+.csLeft,
+.csMid,
+.csRight {
+  align-items: center;
+  text-align: start;
+  margin: auto;
+  display: flex;
+}
+
+.grid,
+.grid2 {
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Shantell Sans', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-size: 26px;
+  margin: 10px auto;
+  background-color: navajowhite;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 5px solid black;
+  width: 90%;
+}
+
+.heading .chopstick {
+  max-width: 300px;
+  max-height: 250px;
+  border: none;
+}
+
+.heading h1 {
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-weight: 800;
+}
+
+.gridContainer {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  margin: 25px auto;
+  gap: 25px;
+  padding: 50px 0;
+  width: 90%;
+}
+
+.gridContainer .list {
+  transition: 0.3s ease-in;
+
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.gridContainer .list:hover {
+  background: #e0e0e0;
+
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transform: scale(1.05);
+}
+
+.gridContainer .list button {
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.gridContainer .list button:hover {
+  letter-spacing: 2px;
+}
+
+.gridContainer div {
+  text-align: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.rec {
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  margin: 25px auto;
+  border: 2px solid black;
+  padding: 10px;
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+.rec:hover {
+  transform: scale(1.05);
+}
+
+.rec .price {
+  font-family: 'CelloSansRegular';
+  font-weight: 600;
+  font-size: 2em;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  right: -30px;
+  background-color: rgb(255, 215, 0);
+  padding: 15px 10px;
+  color: black;
+}
+
+.rec img {
+  transition: 0.5s;
+}
+
+.rec img:hover {
+  cursor: pointer;
+  animation: rotate 20s linear infinite;
+  scale: 1.1;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rec .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rec .description .zutaten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 8px;
+}
+
+.rec .description .zutaten p {
+  border-radius: 5px;
+}
+
+.rec .description h2 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.rec .description .zutaten .avocado {
+  background-color: rgba(132, 253, 132, 0.377);
+}
+.rec .description .zutaten .bohnen {
+  background-color: #00881d70;
+}
+.rec .description .zutaten .paprika {
+  background-color: rgba(255, 19, 19, 0.418);
+}
+.rec .description .zutaten .hänchen {
+  background-color: #ffcb228f;
+}
+.rec .description .zutaten .mango {
+  background-color: #eeff028e;
+}
+.rec .description .zutaten .gurken {
+  background-color: #5bfd3a8a;
+}
+.rec .description .zutaten .lachs {
+  background-color: #ff5c5c81;
+}
+.rec .description .zutaten .sesame {
+  background-color: #a0a0a0a1;
+}
+
+.rec .description .zutaten .tofu {
+  background-color: #f3a632a2;
+}
+
+.rec .description .zutaten .seaweed {
+  background-color: #12fd88ab;
+}
+
+.rec .description .zutaten .fish-egg {
+  background-color: #eb910a94;
+}
+
+.gridContainer img {
+  width: 200px;
+  margin: auto;
+}
+
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 50px 0;
+}
+
+.gridContainer2 img {
+  width: 300px;
+}
+
+input[type='text'],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formular {
+  border: solid black;
+  display: flex;
+  border-radius: 5px;
+  padding: 30px;
+  justify-content: center;
+  margin: 30px auto;
+  width: 85%;
+}
+
+.formImej img {
+  width: 100%;
+}
+
+.sub {
+  width: 100%;
+  background-color: navajowhite;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sub:hover {
+  background-color: #9e5f45;
+}
+
+.vidText {
+  margin: 2rem;
+  text-align: center;
+}
+
+.vid {
+  display: flex;
+  width: 100%;
+}
+
+.vid iframe {
+  width: 900px;
+  height: 420px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+footer {
+  color: white;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: #edf416;
+}
+
+.footer {
+  background-color: #173ca0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+}
+
+.footLeft {
+  word-spacing: 2px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.footRight {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .rightSection h2 {
+    scale: 0.7;
+  }
+  .navbarRight div {
+    padding: 30px 15px;
+  }
+  .mehrDazu {
+    scale: 0.8;
+  }
+  .logo {
+    scale: 0.9;
+  }
+  .footer div {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    left: 5%;
+  }
+  .navbarContainer {
+    flex-direction: row-reverse;
+  }
+
+  .navbarLeft {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -800px;
+    display: flex;
+    z-index: 100;
+    flex-direction: column;
+    background-color: #173ca0;
+    text-align: left;
+    transition: all 0.5s ease;
+    border: 2px solid white;
+  }
+
+  .colorSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .footer a {
+    scale: 0.8;
+  }
+
+  .footLogo {
+    display: none;
+  }
+
+  .formImej {
+    display: none;
+  }
+
+  .navbarLeft.active {
+    top: 100%;
+  }
+}
