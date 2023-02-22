@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!--font -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cello-sans" type="text/css" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/russisch-sans" type="text/css" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/eptkazoo" type="text/css" />
+    <!--font -->
+    <script src="script.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <div id="navbar" class="navbarContainer">
+            <div class="navbarLeft">
+                <div class="menu"><a href="#menu">Menu</a></div>
+                <div class="abtUs"><a href="uberuns.html">Über Uns</a></div>
+                <div class="loct"><a href="#sch">News</a></div>
+            </div>
+            <img class="logo" src="/img/logo.png">
+            <div class="navbarRight">
+                <div class="loct">
+                    <i class="fa-solid fa-map-pin"></i>
+                </div>
+                <div class="order" onclick="darkMode()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="signIn">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="opening" id="openLight">
+            <h1>HERZLICH WILLKOMEN IN SUSHINDO</h1>
+        </div>
+        <div class="boxSection">
+            <img src="img/city_landscape_3.svg" alt="">
+            <div class="rightSection">
+                <div class="words">
+                    <h2>Sushi-Laden, <br>die <i>verzaubern</i>,<br> bei uns wird jeder satt und <i>zufrieden</i></h2>
+                </div>
+                <div class="mehrDazu" id="mehr">Entdecken Sie die besten Sushi-Gerichte der Stadt</div>
+
+            </div>
+        </div>
+        <div class="grid id=" menu">
+            <h1>Was wollen Sie heute Essen?</h1>
+            <div class="gridContainer">
+                <div class="grid1">
+                    <img src="img/4.jpg">
+                    <p>California Roll</p>
+                </div>
+                <div class="grid4">
+                    <img src="img/4.jpg">
+                    <p>Vegan Platter</p>
+                </div>
+                <div class="grid5">
+                    <img src="img/4.jpg">
+                    <p>Fischplatter</p>
+                </div>
+                <div class="grid6">
+                    <img src="img/4.jpg">
+                    <p>Mixed Plater</p>
+                </div>
+                <div class="grid2">
+                    <img src="img/4.jpg">
+                    <p>Speciales Angebot</p>
+                </div>
+                <div class="grid3">
+                    <img src="img/4.jpg">
+                    <p>Hauptspeise</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid2">
+            <h1>Haben Sie momentan kein Bock auf Sushi?<br>
+                Empfelungen für Sie
+            </h1>
+            <div class="gridContainer2">
+                <div class="rec1">
+                    <img src="img/hunh.webp">
+                    <p>POKÉ BOWL Hühnchen</p>
+                </div>
+                <div class="rec2">
+                    <img src="img/vegan.webp">
+                    <p>POKÉ BOWL Vegan</p>
+                </div>
+                <div class="rec3">
+                    <img src="img/9.png">
+                    <p>POKÉ BOWL Lachs</p>
+                </div>
+                <div class="rec4">
+                    <img src="img/hunh.webp">
+                    <p>POKÉ BOWL Premium</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="colorSection">
+            <div class="csLeft">
+                <i class="fa-regular fa-seedling"></i>
+                <p>Vegetarische und glutenfreie Optionen<br>
+                    für alle Bedürfnisse.</p>
+            </div>
+            <div class="csMid">
+                <i class="fa-solid fa-recycle"></i>
+                <p>Wir verwenden nachaltiges Verpackungsmaterialien</p>
+            </div>
+            <div class="csRight">
+                <i class="fa-solid fa-cake-candles"></i>
+                <p>Catering für deine Feste & Events.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="formular">
+        <div class="form" id="sch">
+            <h1>Frisch Informiert</h1>
+            <p>Neuigkeiten und Angebote von Sushindo im Newsletter!</p>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Vorname">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Nachname">
+
+                <label for="lname">E-mail</label>
+                <input type="text" id="lname" name="lastname" placeholder="Ihre Mails">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="deutschland">Deutschland</option>
+                    <option value="indonesia">Indonesien</option>
+                    <option value="singapore">Singapore</option>
+                </select>
+                <label for="acc"></label>
+                <input type="checkbox" id="acc" name="acc" value="Accept">
+                <label for="checkbox">Mit Klick auf den Button bestätige ich, dass ich die <a
+                        href="https://de.wikipedia.org/wiki/Datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen
+                    habe.</label>
+            </form>
+            <button class="sub" onclick="validateForm()">Submit</button>
+
+        </div>
+        <div class="formImej">
+            <img src="img/notification_illustration12.png" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footLeft">
+                Author:<br>
+                Eric Meilaki Pangaribuan<br>
+                Trier, Germany 2022.
+            </div>
+            <img class="footLogo" src="img/logo.png" alt="">
+            <div class="footRight">
+                <a href="https://www.facebook.com/SushiTrier/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/worldwide_sushi"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sushiteiindonesia/?hl=en"><i
+                        class="fa-brands fa-instagram"></i></a></a>
+                <a href="https://www.youtube.com/@Munchies"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+   
+</body>
+
+</html>
